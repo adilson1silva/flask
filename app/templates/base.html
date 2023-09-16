@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+</head>
+<body>
+    
+    <nav id="menu">
+        <!-- a href="/Logo"><img class="logo" src="{{url_for('static', filename='imagens/logo.png')}}" alt="logo"></a>  -->
+        <a href="/categoria">categorias</a> |
+        <a href="Search"><input type="text" placeholder="Digite a sua pesquisa"></a>
+        <a href="/index"> Página Inicial></a> |
+        <a href="/contact"> Contacto></a> |
+        <a href="/login"> Login in</a> |
+        <a href="/calcular"> Calculador</a>
+    </nav>
+
+    {% block conteudo %}
+    {% endblock %}
+
+
+    
+    <footer class="hidden">
+
+        <p>&copy;2023 Este site for cirado pro Adilson Silva</p>
+        <p>Todos os direitos autorais</p>
+        
+    </footer>
+
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</body>
+</html>

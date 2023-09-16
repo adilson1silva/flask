@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+
+    <div class="content">
+        <h2>I'm using the path HTML for say Hello World for everybody! Good morning!</h2>
+        <h3>Hello {{nome}} you know you're the best!! Keep going!</h3>
+        <p>
+            Nome: {{nome}}</br>
+            Apilido: {{dados.Apilido}}</br>
+            Idade: {{dados.Idade}}</br>
+            Profissão: {{dados.Profissão}}
+        </p>
+    
+        <p>
+            aprender Flask
+        </p>
+    
+        <img class = "flask_image" src="{{url_for('static', filename='imagens/flask.png')}}" alt="">
+    
+        <p>Este é um site de ospedagem de corsos e produtos onlines para serem vendidos</p>
+        <p>Qualquer pessoas pode fazer a sua hospedagem e começar a fazer as suas vendas entretanto tenho que ganhar uma comissão por cada venda realizada</p>
+        <p>
+            esta comição depende do produto.
+        </p>
+        <li>10% de comissão para produtos digitais</li>
+        <li>18% de comissão para produtos fisicos</li>
+        
+        <p>Este site permito a todos adicionar os seus conteúdos para fazerem as suas vendas</p>
+    
+        <p>
+            tenho que apperfeiçoar os meus estudos a respeito deste tema, o que deve incluir os seguintes requisitos:
+        </p>
+
+        <nav>
+            <li>criar perfil para cada utilizador
+                <li>utilizador que adicionam conteúdos para venda</li>
+                <li>utilizadores que criam perfis para compra</li>
+            </li>
+            <li>forma de pagamento</li>
+            <li>acesso aos produtos comprados</li>
+            <li>Contar o número de download</li>
+            <li>Dar alguns suporte a nivel de criar paginas para os conteúdos</li>
+        </nav>
+        <p>Estou numa fase inicial, em prencipio estou a ter dificuldades em organizar corretamente</p>
+        <p>O mais importante é não desistir, eu tenho a certeza que chegarei lá</p>
+    </div>
+
+{% endblock  %}

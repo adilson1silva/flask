@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+    <form action="/calcular" method="POST">
+    <p>
+        primeiro número <br>
+        <input type="text" name="número_1"><br>
+        segundo número <br>
+        <input type="text" name="número_2"><br>
+        <label >Selecionar a operação</label>
+        <select name="opr" id="op">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select><br><br>
+
+        <button type="submit" value="submit"> Calcular </button> <br>
+        <p>
+        resultado <br>
+    </form>
+
+        {% if result %}
+        <p>
+            O teu resultado  = {{result}}
+        </p> 
+        {% endif %}
+        </p>
+        
+
+    </p>
+
+
+    
+
+
+{% endblock %}

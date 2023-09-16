@@ -1,0 +1,51 @@
+
+
+.flask_image{
+    background-color: aqua;
+
+}
+
+#menu{
+    background-color: rgb(7, 255, 255);
+    height: 56px;
+    width: auto;
+    padding-left: 0px;
+}
+
+.logo{
+    background-color: aqua;
+    color: aquamarine;
+    text-align: left;
+    width: 130px;
+    height: 70px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: transform 0.3s ease; /* Adicione uma transição para suavizar a animação. */
+}
+
+/*
+/*Estilo de rodapé vísivel*/
+footer:not(.hidden){
+    transform: translateY(0); 
+}
+
+/*Estilo de roda pé oculto*/
+footer.hidden{
+    transform: translateY(100%);
+}
+
+*/
+
+
+.content{
+    margin-bottom: 60px;
+}
+

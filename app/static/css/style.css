@@ -1,4 +1,8 @@
-
+body{
+    margin-left: 300px;
+    margin-right: 500px;
+    text-align: justify;
+}
 
 .flask_image{
     background-color: aqua;

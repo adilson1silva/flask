@@ -56,3 +56,8 @@ def calcular():
         
         
     return render_template('calculador.html', result=result)
+
+@app.route('/pagina')
+def inicial():
+    return render_template('pagina_inicial.html')
+    

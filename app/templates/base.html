@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
 </head>
 <body>
+    <header>
+        <h1>Curiosidade de Perder peso e ganhar massa muscular</h1>
+        <p>Tudo aquilo que você sempre quis saber sobre o mundo de fitness em um único lugar </p>
+    </header>
     
-    <nav id="menu">
-        <!-- a href="/Logo"><img class="logo" src="{{url_for('static', filename='imagens/logo.png')}}" alt="logo"></a>  -->
-        <a href="/categoria">categorias</a> |
-        <a href="Search"><input type="text" placeholder="Digite a sua pesquisa"></a>
-        <a href="/index"> Página Inicial></a> |
-        <a href="/contact"> Contacto></a> |
+    <nav>
+        <a href="/pagina">Página</a> |
         <a href="/login"> Login in</a> |
-        <a href="/calcular"> Calculador</a>
+        <a href="/calcular"> Calculador</a> |
+        <a href="/contact"> Contacto></a> |
+        <a href="/index"> Página Inicial></a> |
     </nav>
+   
 
     {% block conteudo %}
     {% endblock %}
